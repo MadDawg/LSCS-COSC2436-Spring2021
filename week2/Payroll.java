@@ -2,54 +2,6 @@ package payroll;
 
 import java.util.regex.*;
 
-/*public class EmptyEmployeeNameException extends RuntimeException{
-    private String message;
-
-    public EmptyEmployeeNameException(String message){
-        this.message = message;
-    }
-
-    public String getMessage(){
-        return message;
-    }
-}
-
-public class InvalidEmployeeIDException extends RuntimeException{
-    private String message;
-
-    public InvalidEmployeeIDException(String message){
-        this.message = message;
-    }
-
-    public String getMessage(){
-        return message;
-    }
-}
-
-public class HoursWorkedOutOfBoundsException extends RuntimeException{
-    private String message;
-
-    public HoursWorkedOutOfBoundsException(String message){
-        this.message = message;
-    }
-
-    public String getMessage(){
-        return message;
-    }
-}
-
-public class PayrateOutOfBoundsException extends RuntimeException{
-    private String message;
-
-    public PayrateOutOfBoundsException(String message){
-        this.message = message;
-    }
-
-    public String getMessage(){
-        return message;
-    }
-}*/
-
 public class Payroll
 {
     private String name;
