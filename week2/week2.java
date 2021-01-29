@@ -8,6 +8,11 @@ import payroll.*;
 
 class Week2
 {
+    public static void printPayroll(Payroll payroll){
+        System.out.printf("\nName: %s\nID: %s\nHours Worked: %d\nPayrate: %.2f\n",
+            payroll.getName(), payroll.getID(), payroll.getHours(), payroll.getRate());
+    }
+
     public static void main (String[] args) throws java.lang.Exception
 	{
         // as far as I know (which is very little), there is no tuple-like class included Java
@@ -30,6 +35,10 @@ class Week2
 
         // test setters
         Payroll payroll = new Payroll();
+        System.out.println();
+
+        // test getters
+        printPayroll(payroll);
         System.out.println();
 
         try{
@@ -65,8 +74,7 @@ class Week2
             payroll.setRate(25.0);
         }
 
-        // test getters
-        System.out.printf("\nName: %s\nID: %s\nHours Worked: %d\nPayrate: %.2f\n",
-            payroll.getName(), payroll.getID(), payroll.getHours(), payroll.getRate());
+        // test getters again
+        printPayroll(payroll);
     }
 }

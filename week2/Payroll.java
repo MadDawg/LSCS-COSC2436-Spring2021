@@ -9,10 +9,11 @@ public class Payroll
     private int hours;
     private double rate;
 
-    //public static Pattern idPattern = Pattern.compile("^\\w{2}\\d{4}$");
-
     public Payroll(){
-
+        name = "";
+        id = "";
+        hours = 0;
+        rate = 0.0;
     }
 
     public Payroll(String employeeName, String employeeID,
