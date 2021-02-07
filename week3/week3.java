@@ -22,12 +22,18 @@ class Week3{
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter palindomes (press CTRL+Z followed by the Enter key to finish): ");
         do{
-            String str = sc.nextLine();
-            if (isPalendrome(str)){
-                System.out.printf("\"%s\" is a palendrome.\n", str);
+            try{
+                String str = sc.nextLine();
+                if (isPalendrome(str)){
+                    System.out.printf("\"%s\" is a palendrome.\n", str);
+                }
+                else{
+                    System.out.printf("\"%s\" is not a palendrome.\n", str);
+                }
             }
-            else{
-                System.out.printf("\"%s\" is not a palendrome.\n", str);
+            // user inputs ^Z or ^D without inputting a string
+            catch(java.util.NoSuchElementException e){
+                break;
             }
         }
         while(sc.hasNextLine());
