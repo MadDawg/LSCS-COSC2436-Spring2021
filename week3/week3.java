@@ -19,21 +19,10 @@ class Week3{
     }
 
     public static void main (String[] args) throws java.lang.Exception{
-        String[] strings = {
-            "racecar",
-            "anexena",
-            "palendrome",
-            "madam",
-            "rotor",
-            "wow",
-            "lol",
-            "gg",
-            "no",
-            "re",
-            "a",
-            ""
-        };
-        for(String str : strings){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter palindomes (press CTRL+Z followed by the Enter key to finish): ");
+        do{
+            String str = sc.nextLine();
             if (isPalendrome(str)){
                 System.out.printf("\"%s\" is a palendrome.\n", str);
             }
@@ -41,5 +30,9 @@ class Week3{
                 System.out.printf("\"%s\" is not a palendrome.\n", str);
             }
         }
+        while(sc.hasNextLine());
+        sc.close();
+
+        System.out.println("Done.");
     }
 }
